@@ -27,10 +27,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t santiagosw/docker-graphql:0.0.2 .
+        docker build -t santiagosw/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push santiagosw/docker-graphql:0.0.2
+        docker push santiagosw/docker-graphql:latest
 
         
       
